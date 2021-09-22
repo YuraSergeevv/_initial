@@ -1,0 +1,93 @@
+body {
+  line-height: 1.25;
+  font-size: $body-font-size+px;
+  font-family: $font-family;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+// <ГОТОВЫЕ КЛАССЫ>----------------------------
+.flexbox {
+  display: flex;
+}
+
+.ai-c {
+  align-items: center;
+}
+.ai-s {
+  align-items: flex-start;
+}
+.ai-e {
+  align-items: flex-end;
+}
+
+.jc-c{
+ justify-content: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.none {
+  display: none !important;
+}
+
+
+//=============================================
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+//=============================================
+
+.bg-cov,.bg-con{
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.bg-cov{
+  background-size: cover;
+}
+.bg-con{
+  background-size: contain;
+}
+
+//=============================================
+li.counter {
+  list-style-type: none;
+  counter-reset: item;
+
+  li {
+    position: relative;
+    padding: 0px 0px 0px 45px;
+
+    &:before {
+      counter-increment: item;
+      content: counter(item);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      transform: translateY(-50%);
+      color: #818181;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 26px;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      border: 1px solid #4274bb;
+    }
+  }
+}
+
+
+// </ГОТОВЫЕ КЛАССЫ>---------------------------
